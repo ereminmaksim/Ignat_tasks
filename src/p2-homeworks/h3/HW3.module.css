@@ -1,0 +1,24 @@
+.parent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+
+}
+
+
+.block {
+    min-height: 130px;
+    width: 250px;
+    top: 250px;
+    margin: 395px 44%;
+    border: 2px solid black;
+    overflow: hidden;
+    background: #E0E0F8;
+}
+
+.block > h1 {
+    text-align: center;
+}

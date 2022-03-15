@@ -1,0 +1,14 @@
+.someClass {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 41px;
+
+
+}
+
+.someBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

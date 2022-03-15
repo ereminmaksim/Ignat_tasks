@@ -1,0 +1,48 @@
+.head {
+    max-width: 450px;
+    height: 150px;
+    background: cornflowerblue;
+    margin-left: 20px;
+    border-radius: 9px;
+}
+
+.wrapper {
+    margin-left: 10px;
+    display: flex;
+    padding: 10px;
+}
+
+.blockMessage {
+    background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+    color: #000;
+    font-size: 18px;
+    padding: 10px 20px;
+    position: relative;
+    border-radius: 5px 5px 5px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blockMessage:after {
+    content: '';
+    position: absolute;
+    left: -1%;
+    top: 114px;
+    margin-left: -13px;
+    border: 7px solid transparent;
+    border-right: 9px solid rgb(207,236,208);
+}
+.blockMessage > h2 {
+    margin-bottom: 2px;
+}
+
+.ava {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.inTime {
+margin-left: auto;
+}
+
