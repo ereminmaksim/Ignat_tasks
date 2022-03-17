@@ -1,11 +1,46 @@
 .someClass {
-
+    border-radius: 5px;
+    border: 3px solid black;
+    padding: 8px;
+    color: #313131;
+    background: green;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .error {
     border: 1px solid red;
 }
 .errorMessage {
-    padding: 7px;
+    padding: 16px;
     color: red;
 }
+
+.wrapper{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper svg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(100%, -50%);
+    color: white;
+}
+
+.someClassInput {
+    border: 3px solid green;
+    background: linear-gradient(35deg,#494949,#313131);
+    font-size: 1.0rem;
+    color: white;
+    padding: 0.5rem 2.5rem;
+    border-radius: 11px;
+    outline: none;
+    width: 100px;
+
+}
+

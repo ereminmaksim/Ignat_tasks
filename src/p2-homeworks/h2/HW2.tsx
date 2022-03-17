@@ -9,8 +9,8 @@ export type AffairType = {
     _id: number
     name: string
     priority: string
-
 }
+
 
 export const filterAffairs = (name: AffairType[], filter: AffairPriorityType): AffairType[] => { // need to fix any
     if (filter === 'all') {
@@ -24,6 +24,13 @@ export const filterAffairs = (name: AffairType[], filter: AffairPriorityType): A
     }
     return name
 }
+
+
+
+
+
+
+
 export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => { // need to fix any
     // return ''// need to fix
     return affairs.filter(e => e._id !== _id)
@@ -59,9 +66,11 @@ function HW2() {
                     setFilter={setFilter}
                     deleteAffairCallback={deleteAffairCallback}
                 />
+
                 {/*для личного творчества, могу проверить*/}
                 {/*<AlternativeAffairs/>*/}
             </div>
+            <hr/>
         </div>
     )
 }

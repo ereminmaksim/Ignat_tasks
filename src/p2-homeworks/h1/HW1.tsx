@@ -12,19 +12,15 @@ function HW1() {
     return (
         <div>
             <hr/>
-            homeworks 1
-
-            should work (должно работать)
-
+            <h1 style={{textAlign: "center"}}>homeworks 1</h1>
             <Message
                 avatar={messageData.avatar}
                 name={messageData.name}
                 message={messageData.message}
                 time={messageData.time}
             />
-
-            <hr/>
-            для личного творчества, могу проверить
+            {/*<hr/>*/}
+            {/*для личного творчества, могу проверить*/}
             {/*<AlternativeMessage/>*/}
             <hr/>
         </div>

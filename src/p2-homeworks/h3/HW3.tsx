@@ -23,24 +23,25 @@ function HW3() {
         setUsers(userAdd) // need to fix
     }
 
-    return (
-        <div className={styles.parent}>
-            <div className={styles.block}>
+    return (<>
+            <div className={styles.parent}>
+                <div className={styles.block}>
 
-                 <h1>homeworks 3</h1>
-                {/*should work (должно работать)*/}
-                <GreetingContainer users={users} addUserCallback={addUserCallback}/>
+                    <h1>homeworks 3</h1>
+                    {/*should work (должно работать)*/}
+                    <GreetingContainer users={users} addUserCallback={addUserCallback}/>
 
-                {users.map(e => (
-                    <ul key={e._id}>
-                        <li>{e.name}</li>
-                    </ul>))}
+                    {users.map(e => (
+                        <ul key={e._id}>
+                            <li>{e.name}</li>
+                        </ul>))}
 
-                {/*для личного творчества, могу проверить*/}
-                {/*<AlternativeGreeting/>*/}
-
+                    {/*для личного творчества, могу проверить*/}
+                    {/*<AlternativeGreeting/>*/}
+                </div>
             </div>
-        </div>
+            <hr/>
+        </>
     )
 }
 

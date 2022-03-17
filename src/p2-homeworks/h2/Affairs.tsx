@@ -2,6 +2,8 @@ import React from 'react'
 import Affair from './Affair'
 import {AffairPriorityType, AffairType} from './HW2'
 import styles from './Affairs.module.css'
+import s from "./HW2.module.css";
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 
 type AffairsPropsType = { // need to fix any
@@ -46,10 +48,10 @@ function Affairs(props: AffairsPropsType) {
 
                 <br/>
                 <div className={styles.someBtn}>
-                    <button onClick={setAll}>All</button>
-                    <button onClick={setHigh}>High</button>
-                    <button onClick={setMiddle}>Middle</button>
-                    <button onClick={setLow}>Low</button>
+                    <SuperButton className={s.btn} onClick={setAll}>All</SuperButton>
+                    <SuperButton className={s.btn} onClick={setHigh}>High</SuperButton>
+                    <SuperButton className={s.btn} onClick={setMiddle}>Middle</SuperButton>
+                    <SuperButton className={s.btn} onClick={setLow}>Low</SuperButton>
                 </div>
             </div>
         </>

@@ -27,8 +27,8 @@
     content: '';
     position: absolute;
     left: -1%;
-    top: 114px;
-    margin-left: -13px;
+    top: 115px;
+    margin-left: -12px;
     border: 7px solid transparent;
     border-right: 9px solid rgb(207,236,208);
 }

@@ -1,10 +1,29 @@
-.superInput {
-
+.wrapper{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    position: relative;
 }
 
+.wrapper svg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(100%, -50%);
+    color: white;
+}
+
+
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    border: 3px solid red;
+    background: linear-gradient(35deg,#494949,#313131);
+    font-size: 1.0rem;
+    color: white;
+    padding: 0.5rem 2.5rem;
+    border-radius: 11px;
+    outline: none;
+    width: 100px;
+
 }
 
 .error {
