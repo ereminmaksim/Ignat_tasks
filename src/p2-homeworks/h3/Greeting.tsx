@@ -26,12 +26,12 @@ const Greeting = ({name, setNameCallback, addUser, error, totalUsers}: GreetingP
                     {error ?
                         <>
                             <FaSearch/>
-                            <SuperInputText value={name}
+                            <SuperInputText red value={name}
                                             onChange={setNameCallback}/>
                         </>
                         : <>
                             <FaSearch/>
-                            <SuperInputText className={s.someClassInput}
+                            <SuperInputText
                                             value={name}
                                             onChange={setNameCallback}/>
                         </>

@@ -10,20 +10,21 @@ const messageData = {
 
 function HW1() {
     return (
-        <div>
-            <hr/>
-            <h1 style={{textAlign: "center"}}>homeworks 1</h1>
-            <Message
-                avatar={messageData.avatar}
-                name={messageData.name}
-                message={messageData.message}
-                time={messageData.time}
-            />
-            {/*<hr/>*/}
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeMessage/>*/}
-            <hr/>
-        </div>
+        <><div>
+                <hr/>
+                <h1 style={{textAlign: "center", marginBottom: '2px'}}>homeworks 1</h1>
+                <Message
+                    avatar={messageData.avatar}
+                    name={messageData.name}
+                    message={messageData.message}
+                    time={messageData.time}
+                />
+                {/*<hr/>*/}
+                {/*для личного творчества, могу проверить*/}
+                {/*<AlternativeMessage/>*/}
+                <hr/>
+            </div>
+        </>
     )
 }
 

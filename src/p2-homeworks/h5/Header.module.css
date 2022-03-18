@@ -1,0 +1,17 @@
+.menuHeader{
+  display: flex;
+}
+
+a {
+  cursor: pointer;
+}
+
+.wrapClose {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.activeBtn{
+  background-color: black !important;
+}

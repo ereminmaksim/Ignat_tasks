@@ -12,6 +12,8 @@ type SuperInputTextPropsType = DefaultInputPropsType & { // и + ещё проп
     onEnter?: () => void
     error?: string
     spanClassName?: string
+    red?: boolean
+
 }
 
 export const SuperInputText: React.FC<SuperInputTextPropsType> = (
@@ -21,17 +23,19 @@ export const SuperInputText: React.FC<SuperInputTextPropsType> = (
         onKeyPress, onEnter,
         error,
         className, spanClassName,
-
+        red,
         ...restProps// все остальные пропсы попадут в объект restProps
     }
 ) => {
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
+
         onChange // если есть пропс onChange
         && onChange(e) // то передать ему е (поскольку onChange не обязателен)
 
         onChangeText && onChangeText(e.currentTarget.value)
     }
     const onKeyPressCallback = (e: KeyboardEvent<HTMLInputElement>) => {
+
         onKeyPress && onKeyPress(e);
 
         onEnter // если есть пропс onEnter
@@ -41,7 +45,8 @@ export const SuperInputText: React.FC<SuperInputTextPropsType> = (
 
 
     // const standardInputClassName = `${s.superInput}`
-    const finalInputClassName = `${s.errorInput} ${className}` // need to fix with (?:) and s.superInput
+    const finalInputClassNames = `${ red ? s.errorInput : s.rightInput} ${className}` // need to fix with (?:) and s.superInput
+    // const finalInputClassName = `${s.errorInput} ${className}` // need to fix with (?:) and s.superInput
     //**********************************************************************
     const finalSpanClassName = `${s.error} ${spanClassName ? spanClassName : ''}`
 
@@ -53,7 +58,7 @@ export const SuperInputText: React.FC<SuperInputTextPropsType> = (
                     type={'text'}
                     onChange={onChangeCallback}
                     onKeyPress={onKeyPressCallback}
-                    className={finalInputClassName}
+                    className={finalInputClassNames}
 
                     {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
                 />

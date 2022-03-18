@@ -1,6 +1,5 @@
 .head {
     max-width: 450px;
-    height: 150px;
     background: cornflowerblue;
     margin-left: 20px;
     border-radius: 9px;
@@ -27,7 +26,7 @@
     content: '';
     position: absolute;
     left: -1%;
-    top: 115px;
+    top: 137px;
     margin-left: -12px;
     border: 7px solid transparent;
     border-right: 9px solid rgb(207,236,208);

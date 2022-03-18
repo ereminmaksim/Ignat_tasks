@@ -2,17 +2,18 @@ import React from 'react'
 import Header from './Header'
 import Routes from './Routes'
 
+
 function HW5() {
     return (
         <div>
             {/*в gh-pages лучше работает HashRouter*/}
-            {/*<HashRouter>*/}
+            {/* eslint-disable-next-line react/jsx-no-undef */}
+            {/*<BrowserRouter>*/}
 
             <Header/>
-
             <Routes/>
 
-            {/*</HashRouter>*/}
+            {/*</BrowserRouter>*/}
         </div>
     )
 }

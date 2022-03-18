@@ -1,8 +1,21 @@
-.wrapper{
+.rightInput {
+    border: 3px solid green;
+    background: linear-gradient(35deg, #494949, #313131);
+    font-size: 1.0rem;
+    color: white;
+    padding: 0.5rem 2.5rem;
+    border-radius: 11px;
+    outline: none;
+    width: 100px;
+
+}
+
+.wrapper {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-evenly;
     position: relative;
+
 }
 
 .wrapper svg {
@@ -16,14 +29,13 @@
 
 .errorInput {
     border: 3px solid red;
-    background: linear-gradient(35deg,#494949,#313131);
+    background: linear-gradient(35deg, #494949, #313131);
     font-size: 1.0rem;
     color: white;
     padding: 0.5rem 2.5rem;
     border-radius: 11px;
     outline: none;
     width: 100px;
-
 }
 
 .error {

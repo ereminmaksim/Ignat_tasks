@@ -14,8 +14,8 @@ function Message(props: MessageProps) {
     const {avatar, name, message, time} = props
 
     return (
-        <div>
-            <h1>Отображение формы отправки</h1>
+        <>
+            <h1 style={{marginBottom: '14px'}}>Отображение формы отправки</h1>
             <div className={styles.head}>
                 <div className={styles.wrapper}>
                     <div style={{
@@ -32,7 +32,8 @@ function Message(props: MessageProps) {
                     </div>
                 </div>
             </div>
-        </div>
+            <br/>
+        </>
     )
 }
 
