@@ -1,16 +1,19 @@
+
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    font-family: 'Roboto Mono', monospace, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/42099e114276901.603815673a80f.jpg");
-    min-height:100%;
-
+    background-image: url("https://img5.goodfon.ru/original/1920x1080/d/f9/blackboard-school-student.jpg");
+    min-height: 100%;
+    background-position-x: 162px;
     /* Магия */
-    background-size:cover;
+    background-size: cover;
+    color: white;
+
 
 
 }
@@ -18,8 +21,6 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-
-
 
 
 }
