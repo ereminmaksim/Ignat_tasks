@@ -25,12 +25,6 @@ export const filterAffairs = (name: AffairType[], filter: AffairPriorityType): A
     return name
 }
 
-
-
-
-
-
-
 export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => { // need to fix any
     // return ''// need to fix
     return affairs.filter(e => e._id !== _id)

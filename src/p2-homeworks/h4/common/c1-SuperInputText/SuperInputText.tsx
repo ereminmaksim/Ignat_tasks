@@ -9,7 +9,7 @@ type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElem
 // (чтоб не писать value: string, onChange: ...; они уже все описаны в DefaultInputPropsType)
 type SuperInputTextPropsType = DefaultInputPropsType & { // и + ещё пропсы которых нет в стандартном инпуте
     onChangeText?: (value: string) => void
-    onEnter?: () => void
+    onEnter?: (event: React.KeyboardEvent<HTMLInputElement>) => void
     error?: string
     spanClassName?: string
     red?: boolean
@@ -40,7 +40,7 @@ export const SuperInputText: React.FC<SuperInputTextPropsType> = (
 
         onEnter // если есть пропс onEnter
         && e.key === 'Enter' // и если нажата кнопка Enter
-        && onEnter() // то вызвать его
+        && onEnter(e) // то вызвать его
     }
 
 
