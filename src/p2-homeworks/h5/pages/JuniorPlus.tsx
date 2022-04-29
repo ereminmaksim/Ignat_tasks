@@ -1,6 +1,6 @@
 import React from 'react'
-import HW6 from '../../h6/HW6'
 import s from "./Junior.module.css";
+import HW9 from "../../h9/HW9";
 
 function PreJunior() {
     return (
@@ -10,11 +10,11 @@ function PreJunior() {
                 <img
                     src="https://office-guru.ru/wp-content/uploads/2020/08/it-2-1.jpg"
                     alt="ava"/>
-                {/*<HW1/>*/}
-                {/*<HW2/>*/}
-                {/*<HW3/>*/}
-                {/*<HW4/>*/}
-                <HW6/>
+                <HW9/>
+                {/*<HW10/>*/}
+                {/*<HW11/>*/}
+                {/*<HW12/>*/}
+
             </div>
         </div>
     )

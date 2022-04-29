@@ -12,10 +12,6 @@ function PreJunior() {
                 <img
                     src="https://www.coderspassion.com/wp-content/uploads/2019/08/10-best-tips-to-become-successful-web-designer.jpg"
                     alt="ava"/>
-                {/*<HW1/>*/}
-                {/*<HW2/>*/}
-                {/*<HW3/>*/}
-                {/*<HW4/>*/}
                 <HW6/>
                 <HW7/>
                 <HW8/>
