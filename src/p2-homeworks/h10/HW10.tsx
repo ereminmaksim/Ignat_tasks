@@ -9,6 +9,8 @@ function HW10() {
     // useSelector, useDispatch
     const dispatch = useDispatch()
     const loading = useSelector<AppStoreType, boolean>((state) => state.loading.loading)
+
+
     const setLoading = (loading: boolean) => {
         // dispatch
         // setTimeout
@@ -21,7 +23,8 @@ function HW10() {
         console.log('loading...')
     };
 
-    console.log(loading)
+
+    // console.log(loading)
 
 
     return (

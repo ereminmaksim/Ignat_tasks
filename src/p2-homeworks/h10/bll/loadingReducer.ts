@@ -1,7 +1,7 @@
 const initialState = {
     loading: false,
-    name:"roma",
-    age:26
+    // name:"roma",
+    // age:26
 }
 
 interface ActionLoading {
